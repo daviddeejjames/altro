@@ -1,0 +1,191 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #fff;
+  margin-bottom: 70px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px; /* Must match margin bottom on body */
+}
+
+.social-icons{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 10px;
+}
+
+.instagram{
+	margin-left: 30px;
+}
+
+.social-icons img{
+	width: 100%;
+	height: auto;
+}
+
+.navbar-default {
+	float: right;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#logo{
+	position: relative;
+	top: 45px;
+	left: 70px;
+	display: block;
+	
+}
+
+#home-content{
+	margin-top: 195px;
+}
+
+#content{
+	margin-top: 120px;
+	margin-bottom: 20px;
+}
+
+#trading-hours{
+	display: block;
+	float: left;
+	text-decoration: none;
+	/*margin-right: 20px;*/
+	list-style: none;
+	padding: 0;
+	
+}
+
+#address{
+	margin-top: 20px;
+}
+
+#copyright{
+	font-size: 70%;
+	position: absolute;
+	right: 5px;
+	bottom: 0;
+}
+
+.gallery-row{
+	margin-top: 15px;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+/*----------------------------*/
+
+/*
+	Use min and max width to define mobile or non-mobile specific 
+	css using the @media annotation. 
+	Mobile <= 767px
+	Small Desktop >= 768px, <= 991px
+	Medium-Large Desktop >= 992px
+*/
+@grid-float-breakpoint
+
+}	
+/*	Desktop or greater */
+@media (min-width: 768px) {
+	
+}
+
+/*	Mobile only */
+@media (max-width: 767px) {
+	.navbar-default {
+	top: 10px;
+	float: initial;
+    background-color: transparent;
+    border-color: transparent;
+	}
+	
+	#content{
+		margin: initial;
+	}
+	
+	#logo{
+	position: relative;
+	top: 15px;
+	left: 20px;
+	display: block;
+	}
+	
+	.col-sm-4{
+		margin: 10px;
+	}
+	
+	#trading-hours{
+		top: 0px;
+	}
+	
+	#copyright{
+		float: right;
+	}	
+	
+}
+
+/*	Small Desktop only */
+@media (min-width: 768px) and (max-width: 991px){
+	#logo{
+	position: relative;
+	top: 15px;
+	left: 20px;
+	display: block;
+	}
+}
+
+/*Small and Up*/
+@media (min-width: 768px) {
+	.navbar-nav{
+		float:right;
+	}
+	
+}
+
+/*	Medium and Up Desktop only */
+@media (min-width: 992px) {
+	
+}
+
+
+/* Medium Only */
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* Large and Up Desktop only */
+@media (min-width: 1199px){
+}
